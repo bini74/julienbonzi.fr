@@ -1,0 +1,14 @@
+canvas {
+  position: sticky;
+  margin-left: 50%;
+  margin-top: 50vh;
+  top: 50vh;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 100vh;
+}
+
+.hero{
+  height: 300vh;
+  background-color: black;
+}

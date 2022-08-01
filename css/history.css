@@ -1,0 +1,49 @@
+
+
+body{
+    background-color: #98C1D9;
+    min-height: 100vh;
+    width: auto;
+    min-height: 100vh;
+}
+
+.title_main{
+    position: relative;
+    font-family: 'wulkan-display';
+    font-size: 70px;
+    float: left;
+    margin-left: 10vw;
+    padding-top: 15vh;
+    z-index: 99;
+}
+
+.main_text{
+    height: auto;
+    width: 50vw;
+    font-size: 30px;
+}
+
+#paire{
+    position: relative;
+    float: right;
+    text-align: right;
+    padding-top: 4em;
+    margin-right: 1em;
+}
+
+#impaire{
+    position: relative;
+    float: left;
+    text-align: left;
+    margin-left: 1em;
+    padding-top: 4em;
+}
+
+#birth_picture{
+    position: relative;
+    height: 35em;
+    width: auto;
+    top: 12em;
+    left: 10em;
+
+}
