@@ -4,7 +4,7 @@ const context = canvas.getContext("2d");
 
 const frameCount = 47;
 const currentFrame = index => (
-  `wheel/${index.toString().padStart(4, '0')}.jpg`
+  `https://bini74.github.io/media_jufr/wheel/${index.toString().padStart(4, '0')}.jpg`
 )
 
 const preloadImages = () => {
