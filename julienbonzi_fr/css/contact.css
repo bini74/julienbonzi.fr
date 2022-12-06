@@ -1,0 +1,115 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+    font-family: louis_george_caf;
+    src: url(/pro/louis_george_caf/Louis\ George\ Cafe.ttf);
+}
+
+html,
+body {
+  height: 100%;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: scroll;
+}
+
+body{
+    color: #101081;
+    background-color: #101081;
+    font-family: louis_george_caf;
+    display: flex;
+	height: 100vh;
+	flex-direction: column;
+	justify-content: center;
+    align-items: center;
+}
+
+.container{
+    position: relative;
+    height: 70vh;
+    width: 50vh;
+    background-color: #f3d9a1;
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+    align-items: center;
+}
+
+label, input{
+        position: relative;
+        text-align: center;
+        color: #101081;
+}
+
+label{
+    font-size: 3vh;
+}
+
+input, textarea{
+    color: #101081;
+    border: none;
+    background-color: #f3d9a1;
+    font-size: 2vh;
+    border-bottom: solid 2px #101081;
+}
+
+textarea{
+    padding-left: 1em;
+    max-width: 30vh;
+    height: 3vh;
+}
+
+textarea::placeholder{
+    text-align: center;
+}
+
+.area, #submit{
+    position: relative;
+    margin-top: 3em;
+}
+
+.title{
+    border-bottom: solid 2px #101081;
+}
+
+.btn-confettis{
+    background-color: #f3d9a1;
+    border: none;
+    font-size: 7vh;
+}
+
+.button_send{
+    font-size: 4vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2em;
+}
+
+.slot {
+    position: relative;
+    perspective: 1000px;
+}
+
+.slot div {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    user-select: none;
+}
