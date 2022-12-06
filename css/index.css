@@ -1,5 +1,5 @@
 @font-face {
-    font-family: didot;
+    font-family: 'didot';
     src: url(/css/Didot.ttf);
 }
 
@@ -8,7 +8,12 @@
     src: url(/css/Wulkan_Display/Wulkan\ Display\ Medium\ Italic.otf);
 }
 
-*{
+@font-face {
+  font-family: 'akira';
+  src: url(/css/akira_expanded/Akira\ Expanded\ Demo.otf);
+}
+
+* {
   cursor: none;
 }
 
@@ -54,7 +59,7 @@ body.img-hovered::after {
   padding: 0;
 }
 
-html{
+html {
     scroll-snap-type: mandatory;
     scroll-snap-points-y: repeat(100vh);
     scroll-snap-type: y mandatory;
@@ -102,9 +107,9 @@ li{
     transition: background-size .5s;
   }
   
-  .menu_list:hover {
+.menu_list:hover {
     background-size: 100% 100%;
-  }
+}
 
 
 #bar_menu{
@@ -144,7 +149,7 @@ li{
     top: 2em;
     padding-top: 1.5em;
     position: relative;
-    font-size: 120px;
+    font-size: clamp(40px, 6vw, 100px);
     text-align: center;
     font-family: "didot";
     text-decoration: underline;
@@ -152,261 +157,177 @@ li{
     text-decoration-style: solid;
 }
 
-#hello_illustration{
-    position: absolute;
-    height: 35em;
-    width: auto;
-    left: 5em;
-    top: 15em;
-    filter: invert(100%);
-}
-
 audio{
     display: none;
 }
 
-a:visited{
+a:visited {
   color: #ffffff;
   text-decoration: none;
 }
 
 
-section{
-    scroll-snap-align: start;
+section {
+    scroll-snap-align: center;
 }
 
-.main-content{
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #fffee4;
-}
-
-
-.parent { 
-  display: grid; 
-  grid-template-columns: repeat(6, 1fr); 
-  grid-template-rows: repeat(4, 1fr); 
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  height: 85vh;
-  width: 90vw;
-  border: #000000 solid 5px;
-  border-radius: 15px;
-}
-
-
-.div1 { 
-    grid-area: 1 / 1 / 3 / 5; 
-    background-color: rgb(0, 0, 0);
-    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F32%2F4e%2F90%2F324e90f5ff8a3bc2c11f07862661a4ee.jpg&f=1&nofb=1);
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 10px 0 0 0;
-} 
-.div2 { 
-    grid-area: 1 / 5 / 3 / 7; 
-    background-color: rgb(0, 0, 0);
-    background-image: url(https://bini74.github.io/media_jufr/pictures/IMG_0002.JPG);
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 0 10px 0 0;
-}
-.div3 { 
-  grid-area: 3 / 1 / 5 / 4; 
-  background-color: rgb(0, 0, 0);
-  background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fvisiongeek.pe%2Fwp-content%2Fuploads%2FMacBook-Pro-tres-veces-mas-potente-gracias-al-Apple-M1-1200x633.jpg&f=1&nofb=1);
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 0 0 0 10px;
-} 
-.div4 { 
-  grid-area: 3 / 4 / 5 / 7; 
-  background-color: rgb(0, 0, 0);
-  background-image: url(https://www.stephenandrewstepaniuk.net/wp-content/uploads/2018/10/travel.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 0 0 10px 0;
-} 
-
-#moto{
-  height: 100vh;
-  width: 100vw;
-  background-color: #fffee4;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.content_moto{
-  height: 85vh;
-  width: 90vw;
+.main-content {
+  height: 120vh;
   background-color: #000000;
-  border-radius: 5px;
-  margin-top: 2em;
-  margin-bottom: 2em;
+
 }
 
-.picture_moto{
-
-  background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F32%2F4e%2F90%2F324e90f5ff8a3bc2c11f07862661a4ee.jpg&f=1&nofb=1);
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 1em;
-  margin-right: 0;
-  height: 96%;
-  width: 55%;
-  float: left;
+.presentation {
+  position: relative;
+  bottom: 800px;
 }
 
-.ash{
+.head-text {
+  position: sticky;
   text-align: center;
-  margin-top: 2em;
-  font-size: 50px;
-  margin-bottom: 2em;
+  bottom: 0px;
+  top: 0px;
+  z-index: 2;
+  font-family: 'akira';
+  font-size: calc(8vw + 10px);
+  color: white;
 }
 
-p{
-  font-size: 25px;
-  margin-right: 1em;
-  margin-left: 1em;
-}
-
-.picture_moto2{
-  height: 15em;
-  width: 100%;
-  background-image: url(https://bini74.github.io/media_jufr/pictures/Pasted%20Graphic.tiff);
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-bottom: 1em;
-  border-top: black solid 15px;
-}
-
-.text_moto{
-  background-color: rgb(220, 198, 118);
-  height: 96%;
-  width: 42%;
-  float: right;
-  text-align: right;
-  margin: 1em;
-  margin-left: 0;
-  color: #fff;
-
-}
-
-
-/********************/
-
-#photographie{
-  height: 100vh;
-  width: 100vw;
-  background-color: #fffee4;
+#pic-one{
+  position: sticky;
+  top: 0px;
+  padding-top: 3em;
+  z-index: 1;
   display: flex;
   justify-content: center;
+
+}
+
+#more {
+  height: 100vh;
+  background-color: #000000;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
-.content_photographie{
-  height: 85vh;
-  width: 90vw;
-  background-color: #000000;
-  border-radius: 5px;
-  margin-top: 2em;
-  margin-bottom: 2em;
+.block {
+  position: relative;
+  height: 70vh;
+  width: 12em;
+  background-color: #9fc9f6;
+  text-align: center;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 30px;
+  color: #fffee4;
 }
 
-.picture_photographie{
-
-  background-image: url(https://bini74.github.io/media_jufr/pictures/IMG_0006.JPG);
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 1em;
-  margin-right: 0;
-  height: 96%;
-  width: 55%;
-  float: left;
+.button_more {
+  position: relative;
+  background-color: #fffee4;
+  height: 4em;
+  width: 20em;
+  border-radius: 30px;
+  border: none;
+  font-size: 15px;
 }
 
-.picture_photographie2{
-  height: 15em;
-  width: 100%;
-  background-image: url(https://bini74.github.io//media_jufr/pictures/IMG_0227.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-bottom: 1em;
-  border-top: black solid 15px;
-}
-
-.text_photographie{
-  background-color: rgb(220, 198, 118);
-  height: 96%;
-  width: 42%;
-  float: right;
-  text-align: right;
-  margin: 1em;
-  margin-left: 0;
-  color: #fff;
-
-}
-
-#contact_form{
+#contact_form {
   height: 100vh;
   width: 100vw;
   background-color: #000000;
   font-family: 'wulkan-display';
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
-.contact{
+.contact {
   height: 20em;
   width: 40em;
-  background-color: rgb(251, 242, 200);
+  background-color: #fbf2c8;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-#call{
+#call {
   position: relative;
   float: left;
-  margin-top: 10em;
-  margin-left: 10em;
 }
 
-#mail{
+#mail {
   position: relative;
   float: right;
-  margin-top: 40em;
-  margin-right: 10em
 }
 
-#call-me{
+#call-me {
   font-size: 80px;
 }
 
-#number{
+.number {
+  font-size: 30px;
+}
+.number{
   font-size: 30px;
 }
 
-@media only screen and (max-width: 900px) {
-  body::after {
-    content: "";
-    position: fixed;
-  z-index: -1;
-  top: var();
-  left: var();
-  right: 0;
-  bottom: 0;
-  width: 0;
-  height: 0;
-  border-radius: 0;
-  transform: translate();
-  background: none;
-  mix-blend-mode: none;
+@media only screen and (max-width: 750px) {
+  
+
+  section {
+    scroll-snap-align: none;
+}
+
+#pic-one{
+ max-width: 80px;
+ height: auto;
+}
+  
+  .contact {
+    height: 15em;
+    width: 30em;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  
+  section {
+    scroll-snap-align: none;
+}
+
+  #contact_form {
+    height: 100vh;
+    width: 100vw;
+    background-color: #000000;
+    font-family: 'wulkan-display';
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact {
+    height: 10em;
+    width: 20em;
   }
 
-  * {
-    cursor: pointer;
+  #call-me{
+    font-size: 30px;
+  }
+
+  .number{
+    font-size: 20px;
+  }
+
+  .number{
+    font-size: 20px;
   }
 }
