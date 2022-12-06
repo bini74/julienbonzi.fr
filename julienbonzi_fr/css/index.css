@@ -206,7 +206,11 @@ section {
 #more {
   height: 100vh;
   background-color: #000000;
-  
+  color: #ffffff;
+}
+
+.passions{
+  font-size: 50px;
 }
 
 .block {
