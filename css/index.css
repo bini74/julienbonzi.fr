@@ -169,6 +169,7 @@ a:visited {
 
 section {
     scroll-snap-align: center;
+    overflow: hidden;
 }
 
 .main-content {
@@ -203,15 +204,45 @@ section {
 
 }
 
-#more {
+#passion_info {
   height: 100vh;
   background-color: #000000; 
   color: #ffffff;
 }
 
-.passions{
-  font-size: 50px;
+.info{
+  padding-top: 1em;
+  padding-left: 20px;
+  font-family: 'akira';
+  font-size: calc(33vh + 3px);
+  text-align: left;
+  transition-duration: .5s;
+
 }
+
+#passion_info:hover > .info{
+  font-size: calc(10vh + 3px);
+  /* transition-delay: 2s; */
+  transition-duration: .5s;
+}
+
+.info_2{
+  padding-top: 1em;
+  padding-left: 20px;
+  font-family: 'akira';
+  font-size: calc(4vh + 3px);
+  transition-duration: .5s;
+}
+
+.info_3 > a{
+  display: flex;
+  flex-direction: column;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: calc(vh + 2px);
+  padding-top: 3em;
+}
+
 
 .block {
   position: relative;
@@ -297,6 +328,24 @@ section {
     height: 15em;
     width: 30em;
   }
+
+  .info{
+    padding-top: 1em;
+    padding-left: 20px;
+    font-family: 'akira';
+    font-size: calc(10vh + 3px);
+    text-align: left;
+    transition-duration: 1s;
+  }
+
+  .info_2{
+    padding-top: 1em;
+    padding-left: 20px;
+    font-family: 'akira';
+    font-size: calc(3vh + 3px);
+    transition-duration: .5s;
+  }
+
 }
 
 @media only screen and (max-width: 500px) {
@@ -329,5 +378,22 @@ section {
 
   .number{
     font-size: 20px;
+  }
+
+  .info{
+    padding-top: 1em;
+    padding-left: 20px;
+    font-family: 'akira';
+    font-size: calc(4vh + 2px);
+    text-align: left;
+    transition-duration: 1s;
+  }
+
+  .info_2{
+    padding-top: 1em;
+    padding-left: 20px;
+    font-family: 'akira';
+    font-size: calc(3vh + 3px);
+    transition-duration: .5s;
   }
 }
