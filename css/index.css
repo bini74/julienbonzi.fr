@@ -216,12 +216,14 @@ section {
   font-size: calc(33vh + 3px);
   text-align: left;
   transition-duration: 1s;
-
+  background: linear-gradient(to top, #ffffff 0%, #ffffff 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+  transition: background-size .5s;
 }
 
 #passion_info:hover > .info{
   font-size: calc(10vh + 3px);
   /* transition-delay: 2s; */
+  background-size: 100% 100%;
   transition-duration: 1s;
 }
 
